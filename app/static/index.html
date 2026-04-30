@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenRouter Top Models</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>OpenRouter Top Models</h1>
+      <p class="subtitle">Ranked by capabilities, benchmarks, and value across all categories</p>
+      <div class="meta">
+        <span id="model-count">Loading...</span>
+        <span id="last-updated">Loading...</span>
+      </div>
+    </header>
+
+    <nav class="top-tabs" id="top-tabs">
+      <button class="top-tab active" data-view="best-general">Best General Models</button>
+      <button class="top-tab" data-view="coding-benchmarks">Coding Benchmarks</button>
+      <button class="top-tab" data-view="intelligence-benchmarks">Intelligence Benchmarks</button>
+    </nav>
+
+    <div class="methodology-box" id="view-desc">
+      <p class="methodology-text">Loading methodology...</p>
+    </div>
+
+    <div class="model-grid" id="top-view-grid">
+      <div class="loading">Loading...</div>
+    </div>
+
+    <nav class="category-tabs" id="category-tabs">
+      <button class="tab active" data-cat="programming">Programming</button>
+      <button class="tab" data-cat="roleplay">Roleplay</button>
+      <button class="tab" data-cat="marketing">Marketing</button>
+      <button class="tab" data-cat="marketing/seo">Marketing/SEO</button>
+      <button class="tab" data-cat="technology">Technology</button>
+      <button class="tab" data-cat="science">Science</button>
+      <button class="tab" data-cat="translation">Translation</button>
+      <button class="tab" data-cat="legal">Legal</button>
+      <button class="tab" data-cat="finance">Finance</button>
+      <button class="tab" data-cat="health">Health</button>
+      <button class="tab" data-cat="trivia">Trivia</button>
+      <button class="tab" data-cat="academia">Academia</button>
+    </nav>
+
+    <div class="methodology-box" id="category-desc">
+      <p class="methodology-text">Select a category to see how models are ranked.</p>
+    </div>
+
+    <div class="category-content" id="category-content">
+      <div class="dual-column">
+        <section class="column">
+          <h3>Top 10 Models</h3>
+          <div class="model-list" id="top-list">
+            <div class="loading">Loading...</div>
+          </div>
+        </section>
+        <section class="column">
+          <h3>Top 10 Non-Frontier Models</h3>
+          <div class="model-list" id="non-frontier-list">
+            <div class="loading">Loading...</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
